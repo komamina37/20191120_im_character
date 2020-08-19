@@ -1,0 +1,363 @@
+/* .top_items {
+    border: solid 1px #0e0e0e;
+} */
+
+/*  arduino01  */
+#top_items_arduino01 {
+    --item_deg: 10deg;
+    background-image: url(../img/top_items/top_items_arduino01.png);
+    width: 300px;
+    top: 12%;
+    left: 16%;
+}
+
+.top_items#top_items_arduino01::before {
+    padding-top: 70%;
+}
+
+/*  arduino02  */
+#top_items_arduino02 {
+    --item_deg: 10deg;
+    background-image: url(../img/top_items/top_items_arduino02.png);
+    width: 300px;
+    top: 12%;
+    left: 64%;
+}
+
+.top_items#top_items_arduino02::before {
+    padding-top: 65%;
+}
+
+/*  speaker  */
+#top_items_speaker {
+    --item_deg: -20deg;
+    background-image: url(../img/top_items/top_items_speaker.png);
+    width: 360px;
+    top: 24%;
+    left: 36%;
+}
+
+.top_items#top_items_speaker::before {
+    padding-top: 197%;
+}
+
+/*  cable  */
+#top_items_cable {
+    --item_deg: -60deg;
+    background-image: url(../img/top_items/top_items_cable.png);
+    width: 440px;
+    top: 48%;
+    left: 12%;
+}
+
+.top_items#top_items_cable::before {
+    padding-top: 106%;
+}
+
+/*  headphone  */
+#top_items_headphone {
+    --item_deg: -30deg;
+    background-image: url(../img/top_items/top_items_headphone.png);
+    width: 560px;
+    top: 64%;
+    left: 36%;
+}
+
+.top_items#top_items_headphone::before {
+    padding-top: 114%;
+}
+
+/*  keyboard  */
+#top_items_keyboard {
+    --item_deg: -20deg;
+    background-image: url(../img/top_items/top_items_keyboard.png);
+    width: 960px;
+    top: 32%;
+    left: 80%;
+}
+
+.top_items#top_items_keyboard::before {
+    padding-top: 57%;
+}
+
+/*  light  */
+#top_items_light {
+    --item_deg: 76deg;
+    background-image: url(../img/top_items/top_items_light.png);
+    width: 174px;
+    top: 56%;
+    left: 92%;
+}
+
+.top_items#top_items_light::before {
+    padding-top: 200%;
+}
+
+/*  major  */
+#top_items_major {
+    --item_deg: -20deg;
+    background-image: url(../img/top_items/top_items_major.png);
+    width: 800px;
+    top: 84%;
+    left: 84%;
+}
+
+.top_items#top_items_major::before {
+    padding-top: 32%;
+}
+
+/*  serohan  */
+#top_items_serohan {
+    --item_deg: -20deg;
+    background-image: url(../img/top_items/top_items_serohan.png);
+    width: 800px;
+    top: 85%;
+    left: 12%;
+}
+
+.top_items#top_items_serohan::before {
+    padding-top: 61%;
+}
+
+/*  mac_hide  */
+#top_items_mac_hide {
+    --item_deg: 160deg;
+    background-image: url(../img/top_items/top_items_mac_hide.png);
+    width: 880px;
+    top: 64%;
+    left: 64%;
+}
+
+.top_items#top_items_mac_hide::before {
+    padding-top: 67%;
+}
+
+/*  smartphone  */
+#top_items_smartphone {
+    --item_deg: 120deg;
+    background-image: url(../img/top_items/top_items_smartphone.png);
+    width: 220px;
+    top: 30%;
+    left: 54%;
+}
+
+.top_items#top_items_smartphone::before {
+    padding-top: 200%;
+}
+
+/*  hand  */
+#top_items_hand {
+    --item_deg: -124deg;
+    background-image: url(../img/top_items/top_items_hand.png);
+    width: 420px;
+    top: 10%;
+    left: 96%;
+}
+
+.top_items#top_items_hand::before {
+    padding-top: 155%;
+}
+
+
+
+
+
+.top_items.top_character {
+    z-index: 0;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+/*  character01 basic  */
+#top_character01 {
+    --item_deg: 32deg;
+    background-image: url(../img/top_character/top_character_real01.png);
+    width: 160px;
+    top: 28%;
+    left: 5.4%;
+}
+
+.top_items#top_character01::before {
+    padding-top: 140%;
+}
+
+/*  character02 3d  */
+#top_character02 {
+    --item_deg: 48deg;
+    background-image: url(../img/top_character/top_character_real02.png);
+    width: 160px;
+    top: 31.3%;
+    left: 34.4%;
+}
+
+.top_items#top_character02::before {
+    padding-top: 140%;
+}
+
+/*  character03 interaction  */
+#top_character03 {
+    --item_deg: 67deg;
+    background-image: url(../img/top_character/top_character_real03.png);
+    width: 160px;
+    top: 55%;
+    left: 94.4%;
+}
+
+.top_items#top_character03::before {
+    padding-top: 140%;
+}
+
+/*  character04 sound  */
+#top_character04 {
+    --item_deg: -18deg;
+    background-image: url(../img/top_character/top_character_real04.png);
+    width: 160px;
+    top: 27.1%;
+    left: 73.7%;
+}
+
+.top_items#top_character04::before {
+    padding-top: 140%;
+}
+
+/*  character05 web  */
+#top_character05 {
+    --item_deg: -113deg;
+    background-image: url(../img/top_character/top_character_real05.png);
+    width: 160px;
+    top: 70%;
+    left: 56.8%;
+
+}
+
+.top_items#top_character05::before {
+    padding-top: 140%;
+}
+
+
+
+/*====================================
+
+    pettern01
+
+====================================*/
+
+/*  arduino01  */
+#mainContent._01 #top_items_arduino01 {
+    --item_deg: 20deg;
+    top: 30%;
+    left: 66%;
+}
+
+/*  arduino02  */
+#mainContent._01 #top_items_arduino02 {
+    --item_deg: -50deg;
+    top: 43%;
+    left: 60%;
+}
+
+/*  speaker  */
+#mainContent._01 #top_items_speaker {
+    --item_deg: -20deg;
+    top: 65%;
+    left: 43%;
+}
+
+/*  cable  */
+#mainContent._01 #top_items_cable {
+    --item_deg: 40deg;
+    top: 87%;
+    left: 92%;
+}
+
+/*  headphone  */
+#mainContent._01 #top_items_headphone {
+    --item_deg: -30deg;
+    top: 62%;
+    left: 5%;
+}
+
+/*  keyboard  */
+#mainContent._01 #top_items_keyboard {
+    --item_deg: 130deg;
+    top: 78.8%;
+    left: 70%;
+}
+
+/*  light  */
+#mainContent._01 #top_items_light {
+    --item_deg: -40deg;
+    top: 15.2%;
+    left: 88%;
+}
+
+/*  major  */
+#mainContent._01 #top_items_major {
+    --item_deg: -9deg;
+    top: 10.2%;
+    left: 9.8%;
+}
+
+/*  serohan  */
+#mainContent._01 #top_items_serohan {
+    --item_deg: 0deg;
+    top: 42%;
+    left: 15%;
+}
+
+/*  mac_hide  */
+#mainContent._01 #top_items_mac_hide {
+    --item_deg: -50deg;
+    top: 24.4%;
+    left: 40%;
+}
+
+/*  smartphone  */
+#mainContent._01 #top_items_smartphone {
+    --item_deg: -130deg;
+    top: 50%;
+    left: 90%;
+}
+
+/*  hand  */
+#mainContent._01 #top_items_hand {
+    --item_deg: 10deg;
+    top: 96%;
+    left: 25%;
+}
+
+
+
+/*  character01 basic  */
+#mainContent._01 #top_character01 {
+    --item_deg: -8deg;
+    top: 48.2%;
+    left: 16.6%;
+}
+
+/*  character02 3d  */
+#mainContent._01 #top_character02 {
+    --item_deg: 40deg;
+    top: 80.3%;
+    left: 75.4%;
+}
+
+/*  character03 interaction  */
+#mainContent._01 #top_character03 {
+    --item_deg: -72deg;
+    top: 92.4%;
+    left: 21.8%;
+}
+
+/*  character04 sound  */
+#mainContent._01 #top_character04 {
+    --item_deg: 29deg;
+    top: 60%;
+    left: 45.4%;
+}
+
+/*  character05 web  */
+#mainContent._01 #top_character05 {
+    --item_deg: 29deg;
+    top: 27%;
+    left: 67%;
+}

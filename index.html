@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>IMちゃんみっけ！ | imchan project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="./common/img/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="./common/img/favicon.ico" type="image/vnd.microsoft.icon">
+  <link type="text/css" rel="stylesheet" href="./common/css/reset.css">
+  <link type="text/css" rel="stylesheet" href="./common/css/style.css">
+  <link type="text/css" rel="stylesheet" href="./common/css/menu.css">
+  <link type="text/css" rel="stylesheet" href="./common/css/top_items.css">
+  <link type="text/css" rel="stylesheet" href="./common/css/badge.css">
+  <!-- font include -->
+  <script src="./common/js/font_include.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!-- jQuery UI Touch Punch -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js">
+  </script>
+  <style>
+    #red-box {
+      position: absolute;
+      background-color: #c02020;
+      width: 100px;
+      top: 6.4rem;
+      left: 6.4rem;
+    }
+
+    #red-box::before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    .drag-and-drop {
+      cursor: move;
+      position: absolute;
+      /* z-index: 1000; */
+    }
+
+    .drag {
+      z-index: 100;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="mainLoader" class="js-loader loader">
+      <img src="./common/img/logo/logo_loading_w.svg" alt="NowLoading">
+    </div>
+    <script>
+      jQuery(function () {
+        let loader = $('.js-loader');
+        let animation = new Promise((resolve, reject) => {
+          setTimeout(function () {
+            jQuery(loader).addClass('_hide');
+            setTimeout(function () {
+              resolve();
+            }, 1000);
+          }, 1000);
+        })
+        animation.then(() => {
+          jQuery(loader).remove();
+        })
+      });
+    </script>
+    <header>
+      <h1>ＩＭちゃん</h1>
+    </header>
+    <div class="mainFrame _top"></div>
+    <div class="mainFrame _right"></div>
+    <div class="mainFrame _left"></div>
+    <div class="mainFrame _bottom"></div>
+
+    <div class="dragMoveBtn _top _off"></div>
+    <div class="dragMoveBtn _right"></div>
+    <div class="dragMoveBtn _left _off"></div>
+    <div class="dragMoveBtn _bottom"></div>
+
+    <div id="navBtn" class="navAction navClick">
+      <div id="navBtnBarWrapper">
+        <div class="navBtnBar _01"></div>
+        <div class="navBtnBar _02"></div>
+        <div class="navBtnBar _03"></div>
+      </div>
+    </div>
+
+    <div id="navWrapper" class="navAction">
+      <nav id="navContent" class="">
+        <div class="contentWrap">
+          <p>これは絵本である「ミッケ」をモチーフとして制作したWEBサイトです。</p>
+          <p>IM（インタラクティブメディア）学科オリジナルキャラの３DCGくん、インタラクティブアートくん、サウンドくん、webくんを探して各キャラクターの実態を探りましょう！</p>
+          <p>また、IMに関係する道具やデバイスをクリックすると、その道具やデバイスの細かい詳細を見ることができます。</p>
+          <p>ぜひIMちゃんたちを探してみてください！</p>
+          <!-- <div class="btnWrapper">
+                        <button class="js-btn_debug btn_debug js-btn btn"><span>デバッグよう</span></button>
+                        <button class="js-btn_drag btn_drag js-btn btn"><span>ドラッグてんごく</span></button>
+                    </div> -->
+        </div>
+      </nav>
+    </div>
+
+    <div id="mainWrapper">
+      <div id="mainContent" class="drag-and-drop">
+        <div class="top_items js-popup_item" id="top_items_arduino01"></div>
+        <div class="top_items js-popup_item" id="top_items_arduino02"></div>
+        <div class="top_items js-popup_item" id="top_items_speaker"></div>
+        <div class="top_items js-popup_item" id="top_items_cable"></div>
+        <div class="top_items js-popup_item" id="top_items_headphone"></div>
+        <div class="top_items js-popup_item" id="top_items_keyboard"></div>
+        <div class="top_items js-popup_item" id="top_items_light"></div>
+        <div class="top_items js-popup_item" id="top_items_major"></div>
+        <div class="top_items js-popup_item" id="top_items_serohan"></div>
+        <div class="top_items js-popup_item" id="top_items_mac_hide"></div>
+        <div class="top_items js-popup_item" id="top_items_smartphone"></div>
+        <div class="top_items js-popup_item" id="top_items_hand"></div>
+
+        <div class="top_items js-top_character top_character" id="top_character01"></div>
+        <div class="top_items js-top_character top_character" id="top_character02"></div>
+        <div class="top_items js-top_character top_character" id="top_character03"></div>
+        <div class="top_items js-top_character top_character" id="top_character04"></div>
+        <div class="top_items js-top_character top_character" id="top_character05"></div>
+      </div>
+    </div>
+    <div id="badgeGetWrapper" class="_off">
+      <div class="badgeGetHolder">
+        <div class="js-badgeGetCharacter badgeGetCharacter _03">
+          <div class="clipmask">
+            <img class="get_character" src="./common/img/top_character/top_character03.png" alt="">
+          </div>
+        </div>
+        <div class="js-badgeGetCharacter badgeGetCharacter _05">
+          <div class="clipmask">
+            <img class="get_character" src="./common/img/top_character/top_character05.png" alt="">
+          </div>
+        </div>
+        <div class="js-badgeGetCharacter badgeGetCharacter _01">
+          <div class="clipmask">
+            <img class="get_character" src="./common/img/top_character/top_character01.png" alt="">
+          </div>
+        </div>
+        <div class="js-badgeGetCharacter badgeGetCharacter _04">
+          <div class="clipmask">
+            <img class="get_character" src="./common/img/top_character/top_character04.png" alt="">
+          </div>
+        </div>
+        <div class="js-badgeGetCharacter badgeGetCharacter _02">
+          <div class="clipmask">
+            <img class="get_character" src="./common/img/top_character/top_character02.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <iframe src="./common/audio/audio01.mp3" allow="autoplay" id="audio" style="display:none">
+  </iframe> -->
+  <script src="./common/js/menu.js"></script>
+  <script src="./common/js/badge.js"></script>
+  <script src="./common/js/popup.js"></script>
+  <script src="./common/js/drag.js"></script>
+  <script></script>
+</body>
+
+</html>
